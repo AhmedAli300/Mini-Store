@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Product List</title>
+    <link rel="stylesheet" href="productStyle.css" />
+  </head>
+
+  <body>
+    <input type="text" id="search" placeholder="Search products" />
+    <select id="price-filter">
+      <option value="all">All Prices</option>
+      <option value="low">Low</option>
+      <option value="medium">Medium</option>
+      <option value="high">High</option>
+    </select>
+    <select id="category-filter">
+      <option value="all">All Categories</option>
+      <option value="electronics">Watches</option>
+      <option value="clothing">Phones</option>
+    </select>
+    <ul id="productList">
+      <li>
+        <div class="product-details">
+          <h3 class="brand">
+            <a href="apple.html">Apple</a>
+          </h3>
+          <h2 class="name">Apple Watch Series 8</h2>
+          <img
+            src="./images/applewatch2.jpeg"
+            alt="Apple Watch Series 8"
+            width="150"
+            height="150"
+          />
+          <p class="price">Price: $499.99</p>
+          <div class="description">
+            <p>Advanced health features and stunning display.</p>
+            <p>Water resistance and durability for active lifestyles.</p>
+          </div>
+          <ul class="specs">
+            <li>Display: 1.9 inches</li>
+            <li>Battery life: Up to 18 hours</li>
+            <li>Water resistance: 50 meters</li>
+            <li>Features: ECG, blood oxygen monitoring</li>
+          </ul>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </li>
+
+      <li>
+        <div class="product-details">
+          <h3 class="brand">
+            <a href="samsung.html">Samsung</a>
+          </h3>
+          <h2 class="name">Galaxy Watch 6 Classic</h2>
+          <img
+            src="./images/applewatch.webp"
+            alt="Samsung Galaxy Watch 6 Classic"
+            width="150"
+            height="150"
+          />
+          <p class="price">Price: $399.99</p>
+          <div class="description">
+            <p>Elegant design with rotating bezel for easy navigation.</p>
+            <p>Long-lasting battery and advanced health tracking.</p>
+          </div>
+          <ul class="specs">
+            <li>Display: 1.4 inches</li>
+            <li>Battery life: Up to 40 hours</li>
+            <li>Water resistance: 5 ATM</li>
+            <li>Features: Blood pressure monitoring, sleep tracking</li>
+          </ul>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </li>
+
+      <li>
+        <div class="product-details">
+          <h3 class="brand">
+            <a href="samsung.html">Samsung</a>
+          </h3>
+          <h2 class="name">Galaxy S23 Ultra</h2>
+          <img
+            src="/images/GalaxyS23Ultra.jpeg"
+            width="180px"
+            height="180px"
+            alt="Samsung Galaxy S23 Ultra"
+          />
+          <p class="price">Price: $1199.99</p>
+          <div class="description">
+            <p>
+              The Galaxy S23 Ultra boasts a massive display and an S Pen for
+              ultimate productivity.
+            </p>
+            <p>
+              Capture stunning photos and videos with its advanced camera
+              system.
+            </p>
+            <p>Experience powerful performance and long battery life.</p>
+          </div>
+          <ul class="specs">
+            <li>Display: 6.8-inch</li>
+            <li>Storage: 256GB, 512GB, 1TB</li>
+            <li>Camera: Quad-camera system</li>
+            <li>RAM: 12GB</li>
+            <li>Battery: 5000mAh</li>
+            <li>Processor: Snapdragon 8 Gen 2</li>
+          </ul>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </li>
+      <li>
+        <div class="product-details">
+          <h3 class="brand">
+            <a href="apple.html">Apple</a>
+          </h3>
+          <h2 class="name">iPhone 15 Pro Max</h2>
+          <img
+            src="./images/iPhone15 ProMax.jpeg"
+            alt="Apple iPhone 15 Pro Max"
+          />
+          <p class="price">Price: $1299.99</p>
+          <div class="description">
+            <p>
+              Experience the ultimate smartphone with the iPhone 15 Pro Max.
+            </p>
+            <p>Featuring a dynamic island and advanced camera system.</p>
+            <p>Enjoy long battery life and powerful performance.</p>
+          </div>
+          <ul class="specs">
+            <li>Display: 6.7-inch</li>
+            <li>Storage: 128GB, 256GB, 512GB, 1TB</li>
+            <li>Camera: Triple-camera system</li>
+            <li>RAM: 8GB</li>
+            <li>Battery: 4323mAh</li>
+            <li>Processor: A17 Bionic</li>
+          </ul>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </li>
+
+      <li>
+        <div class="product-details">
+          <h3 class="brand">
+            <a href="apple.html">Apple</a>
+          </h3>
+          <h2 class="name">iPhone 14 Pro</h2>
+          <img
+            src="./images/iPhone14Pro.jpg"
+            width="180px"
+            height="180px"
+            alt="iPhone 14 Pro"
+          />
+          <p class="price">Price: $999.99</p>
+          <div class="description">
+            <p>
+              The iPhone 14 Pro features a stunning Super Retina XDR display
+              with Always-On.
+            </p>
+            <p>
+              Experience groundbreaking camera capabilities with the 48MP Main
+              camera.
+            </p>
+            <p>Enjoy blazing-fast performance with the A16 Bionic chip.</p>
+          </div>
+          <ul class="specs">
+            <li>Display: 6.7-inch</li>
+            <li>Storage: 128GB, 256GB, 512GB, 1TB</li>
+            <li>Camera: Triple-camera system</li>
+            <li>RAM: 8GB</li>
+            <li>Battery: 4323mAh</li>
+            <li>Processor: A17 Bionic</li>
+          </ul>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </li>
+    </ul>
+
+    <script>
+      const searchInput = document.getElementById("search");
+      const productList = document.getElementById("productList");
+      const priceFilter = document.getElementById("price-filter");
+      const categoryFilter = document.getElementById("category-filter");
+
+      function filterProducts(searchTerm, selectedCategory, selectedPrice) {
+        const products = productList.querySelectorAll("li");
+        const priceRanges = {
+          low: { min: 0, max: 200 },
+          medium: { min: 201, max: 500 },
+          high: { min: 501 },
+        };
+
+        for (let i = 0; i < products.length; i++) {
+          const currentProduct = products[i];
+          const productName = currentProduct
+            .querySelector("h1")
+            .textContent.toLowerCase();
+          const productDescription = currentProduct
+            .querySelector(".description")
+            .textContent.toLowerCase();
+          const productCategory = currentProduct.dataset.category;
+          const productPrice = parseFloat(currentProduct.dataset.price);
+
+          let isMatch = true;
+
+          if (searchTerm) {
+            isMatch =
+              productName.includes(searchTerm.toLowerCase()) ||
+              productDescription.includes(searchTerm.toLowerCase());
+          }
+
+          if (
+            selectedCategory !== "all" &&
+            productCategory !== selectedCategory
+          ) {
+            isMatch = false;
+          }
+
+          if (selectedPrice !== "all") {
+            const priceRange = priceRanges[selectedPrice];
+            isMatch =
+              isMatch &&
+              productPrice >= priceRange.min &&
+              productPrice <= priceRange.max;
+          }
+
+          currentProduct.style.display = isMatch ? "block" : "none";
+        }
+      }
+
+      searchInput.addEventListener("input", (event) => {
+        const searchTerm = event.target.value.toLowerCase();
+        filterProducts(searchTerm, categoryFilter.value, priceFilter.value);
+      });
+
+      categoryFilter.addEventListener("change", () => {
+        const selectedCategory = categoryFilter.value;
+        filterProducts(searchInput.value, selectedCategory, priceFilter.value);
+      });
+
+      priceFilter.addEventListener("change", () => {
+        const selectedPrice = priceFilter.value;
+        filterProducts(searchInput.value, categoryFilter.value, selectedPrice);
+      });
+
+      filterProducts("", "all", "all");
+    </script>
+  </body>
+</html>

@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>miniStore</title>
+    <link rel="stylesheet" href="./css/bootstrap/css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- nav -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#" id="uini">
+          <i class="fa-solid fa-m fa-bounce"></i>iniStore
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="#carouselExampleIndicators"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#product">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#About-us">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact-us">Contact us</a>
+            </li>
+            <li><a class="btn btn-outline-info" href="login.html">Login</a></li>
+            <li>
+              
+              <a href="/cart.html">
+                <i
+                  style="font-size: 25px; margin-top: 6px"
+                  class="fa-solid fa-cart-shopping"
+                ></i>
+                <span id="cart-count" ></span>  
+              </a>           
+            </li>          
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- home -->
+
+    <div class="container m- p-2">
+      <div class="row my-3">
+        <div class="col-12 card bg-dark ">
+          <img src="https://shuttershopegypt.com/wp-content/uploads/2024/07/Apple-iPhone-15-Pro.webp4_.webp" class="card-img mt-3" height="550px" alt="Cover of iPhone" />
+          <div class="card-img-overlay">
+            <h5 class="card-title ">iPhone 15 & 15 Pro Family</h5>
+            <p class="card-text">
+              Unleash the power of your device with the iPhone 15 & 15 Pro
+              Family
+            </p>
+          </div>
+          <div class="bg-dark text-white pb-4" >
+            <h2 class="text-white">Welcome to Our Store</h2>
+            <p>Discover amazing products</p>
+            <button id="but" type="button">
+              <a href="products.html">Shop Now</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- offers -->
+    <div class="container">
+      <div class="row my-5">
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                style="border-radius: 50px; height: 450px"
+                src="https://www.apple.com/newsroom/images/product/watch/lifestyle/Apple_announces-watch-se_09152020_big.jpg.large.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                style="border-radius: 50px; height: 450px"
+                src="./images/GalaxyS23Ultra.jpeg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                style="border-radius: 50px; height: 450px"
+                src="./images/iPhone15 ProMax.jpeg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- product -->
+    <div class="container" id="product">
+      <div class="text-center text-info p-1">
+        <div class="card text-center">
+          <div class="card-header">
+            <h1>Products</h1>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Discover amazing products</h5>
+            <p class="card-text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores,
+              ipsam.
+            </p>
+          </div>
+          <form class="d-flex justify-content-end p-5" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-info" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-4 p-1">
+          <div class="card">
+            <img
+              src="https://osamasalama.com/wp-content/uploads/2023/02/15-3.png"
+              class="card-img-top"
+              height="300px"
+              alt="GalaxyS23Ultra"
+             />
+            <div class="card-body">
+              <h5 class="card-title" name="GalaxyS23Ultra" >GalaxyS23Ultra</h5>
+
+              <p class="card-text"><strong>Price:</strong>$1000</p>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+
+                <i class="fa-solid fa-star-half-alt"></i>
+              </div>
+              <a href="#cart.html" class="btn btn-primary" price="1000" name="GalaxyS23Ultra" >Add to cart</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="ccol-12 col-md-6 col-lg-4 p-1">
+          <div class="card">
+            <img
+              src="https://buy.gazelle.com/cdn/shop/files/iPhone_15_Pro_Max_-_white_titanium-_Overlap_Trans-cropped.jpg?v=1743111769https://buy.gazelle.com/cdn/shop/files/iPhone_15_Pro_Max_-_white_titanium-_Overlap_Trans-cropped.jpg?v=1743111769"
+              class="card-img-top"
+              height="300px"
+              alt="iPhone 15 Pro Max"
+            />
+            <div class="card-body">
+              <h5 class="card-title"  >iPhone 15 Pro Max</h5>
+
+              <p class="card-text"><strong>Price:</strong> $2000</p>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+
+                <i class="fa-solid fa-star-half-alt"></i>
+              </div>
+              <a href="#cart.html" class="btn btn-primary" price="2000" name="iPhone 15 Pro Max" >Add to cart</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 p-1">
+          <div class="card">
+            <img
+              src="https://www.apple.com/newsroom/images/product/iphone/geo/Apple-iPhone-14-Pro-iPhone-14-Pro-Max-deep-purple-220907-geo_inline.jpg.large.jpg"
+              class="card-img-top"
+              height="300px"
+              alt="iPhone 14 Pro max"
+            />
+            <div class="card-body">
+              <h5 class="card-title"  >iPhone 14 Pro max</h5>
+
+              <p class="card-text"><strong>Price:</strong> $1500</p>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+
+                <i class="fa-solid fa-star-half-alt"></i>
+              </div>
+              <a href="#cart.html" class="btn btn-primary" price="1500" name="iPhone 14 Pro max" >Add to cart</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 p-1">
+          <div class="card">
+            <img
+              src="./images/Apple-Watch-Ultra.jpg"
+              class="card-img-top"
+              height="300px"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title" >Apple Watch Ultra 2</h5>
+
+              <p class="card-text"><strong>Price:</strong> $500</p>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+
+                <i class="fa-solid fa-star-half-alt"></i>
+              </div>
+              <a href="#cart.html" class="btn btn-primary" price="500" name="Apple Watch Ultra 2"  >Add to cart</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 p-1">
+          <div class="card">
+            <img
+              src="./images/Apple Watch SE.jpg"
+              class="card-img-top"
+              height="300px"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title"  >Apple Watch SE</h5>
+
+              <p class="card-text"><strong>Price:</strong> $700</p>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+
+                <i class="fa-solid fa-star-half-alt"></i>
+              </div>
+              <a href="#cart.html" class="btn btn-primary" price="700" name="Apple Watch SE" >Add to cart</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 p-1">
+          <div class="card">
+            <img
+              src="https://firstmobilestore.com/wp-content/uploads/2024/09/HUAWEI-WATCH-FIT-3-PINK-e1726600234611.jpeg" 
+              class="card-img-top"
+              height="300px"
+              alt="..."
+              id=""  />
+            <div class="card-body">
+              <h5 class="card-title" >HUAWEI WATCH FIT</h5>
+              <p class="card-text"><strong>Price:</strong>$900</p>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+
+                <i class="fa-solid fa-star-half-alt"></i>
+              </div>
+              <a href="#cart.html" class="btn btn-primary add-to-cart" price="900" name="HUAWEI WATCH FIT" >Add to cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- contact-us  -->
+    <div class="container" id="contact-us">
+      <div class="text-center m-5">
+        <h1>Contact Us</h1>
+        <h3>We would like to hear from you!</h3>
+      </div>
+      <div class="row">
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-6">
+              <div class="card-body">
+                <h5 class="card-title">Contact Us</h5>
+                <p class="card-text">
+                  Have a question or want to work with us? Fill out the form
+                  below and we'll get back to you as soon as possible.
+                </p>
+                <form class="row g-3">
+                  <div class="col-md-12">
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      placeholder="Name"
+                      required
+                      class="form-control"
+                    />
+                  </div>
+                  <div class="col-md-12">
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="Email"
+                      id="inputEmail4"
+                    />
+                  </div>
+                  <div class="col-12">
+                    <textarea
+                      class="form-control"
+                      placeholder="How can we help you?"
+                    ></textarea>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="gridCheck"
+                    />
+                    <label class="form-check-label" for="gridCheck">
+                      Check me out
+                    </label>
+                  </div>
+
+                  <div class="col-12">
+                    <button type="submit" class="btn btn-primary">Send</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <img
+                src="./images/contact.png"
+                class="img-fluid rounded-start"
+                alt="..."
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer
+      class="bg-body-tertiary text-center"
+      style="border-top: 10px solid royalblue"
+    >
+      <div class="container p-4">
+        <section class="mb-4">
+          <a
+            data-mdb-ripple-init
+            class="btn btn-outline btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+
+          <a
+            data-mdb-ripple-init
+            class="btn btn-outline btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-twitter"></i
+          ></a>
+
+          <a
+            data-mdb-ripple-init
+            class="btn btn-outline btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-google"></i
+          ></a>
+
+          <a
+            data-mdb-ripple-init
+            class="btn btn-outline btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-instagram"></i
+          ></a>
+
+          <a
+            data-mdb-ripple-init
+            class="btn btn-outline btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+
+          <a
+            data-mdb-ripple-init
+            class="btn btn-outline btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-github"></i
+          ></a>
+        </section>
+
+        <section class="">
+          <form action="">
+            <div class="row d-flex justify-content-center">
+              <div class="col-auto">
+                <p class="pt-2">
+                  <strong>Sign up for our newsletter</strong>
+                </p>
+              </div>
+
+              <div class="col-md-5 col-12">
+                <div data-mdb-input-init class="form-outline mb-4">
+                  <input
+                    type="email"
+                    id="form5Example24"
+                    class="form-control"
+                  />
+                  <label class="form-label" for="form5Example24"
+                    >Email address</label
+                  >
+                </div>
+              </div>
+
+              <div class="col-auto">
+                <button
+                  data-mdb-ripple-init
+                  type="submit"
+                  class="btn btn-outline mb-4"
+                >
+                  Subscribe
+                </button>
+              </div>
+            </div>
+          </form>
+        </section>
+
+        <section class="">
+          <div class="row">
+            <div class="col-12 col-lg-6 col-md-6">
+              <h5 class="text-uppercase">Links</h5>
+
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a class="text-body" href="#!">Link 1</a>
+                </li>
+                <li>
+                  <a class="text-body" href="#!">Link 2</a>
+                </li>
+                <li>
+                  <a class="text-body" href="#!">Link 3</a>
+                </li>
+                <li>
+                  <a class="text-body" href="#!">Link 4</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-12 col-lg-6 col-md-6">
+              <h5 class="text-uppercase">Links</h5>
+
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a class="text-body" href="#!">Link 1</a>
+                </li>
+                <li>
+                  <a class="text-body" href="#!">Link 2</a>
+                </li>
+                <li>
+                  <a class="text-body" href="#!">Link 3</a>
+                </li>
+                <li>
+                  <a class="text-body" href="#!">Link 4</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div
+        class="text-center p-3"
+        style="background-color: rgba(0, 0, 0, 0.05)"
+      >
+        © 2020 Copyright:
+        <a class="text-reset fw-bold" href="https://MiniStore.com/"
+          >MiniStore.com</a
+        >
+      </div>
+    </footer>
+
+    <script src="./css/bootstrap/js/bootstrap.js"></script>
+    <script src="./css/bootstrap/js/jquery-3.7.1.js"></script>
+    <script src="./css/bootstrap/js/popper.min.js"></script>
+    <script src="/main.js"></script>
+  </body>
+</html>

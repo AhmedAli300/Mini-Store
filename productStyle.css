@@ -1,0 +1,130 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 20px;
+  }
+  
+
+  #search, #price-filter, #category-filter {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 16px; 
+  }
+  
+  #search {
+    width: 200px;
+    margin-right: 10px;
+  }
+  
+  
+  #productList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  #productList li {
+    display: flex;
+    flex-direction: column;
+    width: calc(33% - 20px);
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  }
+  
+  #productList li:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+
+  .product-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+  }
+  
+  .product-details img {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+  }
+  
+  .product-details h1 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .product-details h2 {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  .product-details p {
+    margin: 5px 0;
+    color: #666;
+    line-height: 1.5;
+  }
+  
+  .product-details .price {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .product-details .description {
+    line-height: 1.5;
+  }
+  
+  /* Add styling for "Add to Cart" button */
+  .add-to-cart {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: flex-end; 
+    margin-top: 10px; 
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .add-to-cart:hover {
+    background-color: #0069d9; 
+  }
+  
+
+  .brand {
+    margin-bottom: 5px;
+  }
+  
+  .brand a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  .specs {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .specs li {
+    margin-bottom: 5px;
+  }
+  .product-details img {
+    width: 150px; 
+    height: 150px;
+    border-radius: 50%; 
+    margin-bottom: 10px;
+  }
